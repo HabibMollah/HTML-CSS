@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 93%);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-img {
+    width: 20%;
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+}
+
+#nav-bar {
+    display: flex;
+    gap: 8rem;
+    justify-content: flex-end;
+    margin: 1.5rem 7rem 2rem 2rem;
+}
+
+main {
+    margin: 8rem auto 2rem auto;
+    text-align: center;
+}
+
+#email {
+    padding: 1rem;
+    width: 25%;
+    margin-top: 2rem;
+}
+#submit {
+    display: block;
+    margin: 1rem auto;
+    width: 25%;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+}
+
+#features {
+    margin: 5rem auto;
+    width: 40%;
+}
+
+#features h2, #features p {
+    text-align: left;
+}
+
+#features p {
+    margin-bottom: 1.8rem;
+}
+
+#pricing {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.card {
+    width: 12.5%;
+    border: 1px solid #000;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    background-color: hsl(0, 0%, 87%);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.3rem;
+}
+
+.card h3 {
+    font-size: 2.5em;
+    padding: 1rem;
+}
+
+.card p {
+    margin: 1rem;
+}
+
+.card a {
+    display: block;
+    background-color: hsl(42, 96%, 50%);
+    padding: 1rem;
+    margin: 0.2rem;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: end;
+    background-color: hsl(0, 0%, 87%);
+    width: 50%;
+    margin: auto;
+    font-size: small;
+}
+
+.footer-link {
+    padding: 0.5rem;
+}
+footer a {
+    margin-inline: 0.5rem;
+}
+
+footer p {
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 1180px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .card {
+        width: 40%;
+    }
+    main {
+        width: 90%;
+    }
+    section {
+        width: 100%;
+    }
+    header a {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: end;
+        gap: 0;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+}
